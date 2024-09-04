@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black text-green-400 p-4 font-mono overflow-auto">
       <div className="max-w-4xl mx-auto">
-        <header className="mb-8">
+        <header className="mb-8 text-center">
           <pre className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-green-500 whitespace-pre-wrap">
 {`
  _____                   _             _ 
@@ -17,10 +17,10 @@ const Index = () => {
 `}
           </pre>
           <div className="mt-4 text-green-300">
-            <h1 className="text-2xl font-bold">Ahmed Aldhiyabi</h1>
-            <p className="text-xl">Developer & Information Security Auditor</p>
-            <p className="text-md">Muscat, Oman</p>
-            <div className="flex mt-2 space-x-4">
+            <h1 className="text-3xl font-bold mb-2">Ahmed Aldhiyabi</h1>
+            <p className="text-xl mb-1">Developer & Information Security Auditor</p>
+            <p className="text-md mb-4">Muscat, Oman</p>
+            <div className="flex justify-center space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
                 <span>96672579</span>
