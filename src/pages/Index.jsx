@@ -1,22 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, User, Briefcase, Code } from "lucide-react";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-green-400 p-4 font-mono overflow-auto">
       <div className="max-w-4xl mx-auto">
         <header className="mb-8">
-          <pre className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-green-500">
+          <pre className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-green-500 whitespace-pre-wrap">
 {`
-   _    _                    _    _    _ _     _           _     _ 
-  / \\  | |__  _ __ ___   ___| |  / \\  | | | __| |_  _   _(_) __| |
- / _ \\ | '_ \\| '_ \` _ \\ / _ \\ | / _ \\ | | |/ _\` | || | | | |/ _\` |
-/ ___ \\| | | | | | | | |  __/ |/ ___ \\| | | (_| | || |_| | | (_| |
-/_/   \\_\\_| |_|_| |_| |_|\\___|_/_/   \\_\\_|_|\\__,_|\\__,_,_|_|\\__,_|
+ _____                   _             _ 
+|_   _|__ _ __ _ __ ___ (_)_ __   __ _| |
+  | |/ _ \\ '__| '_ \` _ \\| | '_ \\ / _\` | |
+  | |  __/ |  | | | | | | | | | | (_| | |
+  |_|\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|
 `}
           </pre>
           <div className="mt-4 text-green-300">
+            <h1 className="text-2xl font-bold">Ahmed Aldhiyabi</h1>
             <p className="text-xl">Developer & Information Security Auditor</p>
             <p className="text-md">Muscat, Oman</p>
             <div className="flex mt-2 space-x-4">
@@ -34,16 +35,10 @@ const Index = () => {
 
         <Card className="mb-6 bg-gray-900 border-green-500">
           <CardContent className="p-4">
-            <pre className="text-green-500 mb-2">
-{`
- ____                                          
-|  _ \\ _ __ ___   __ _ _ __ __ _ _ __ ___  ___ 
-| |_) | '__/ _ \\ / _\` | '__/ _\` | '_ \` _ \\/ __|
-|  __/| | | (_) | (_| | | | (_| | | | | | \\__ \\
-|_|   |_|  \\___/ \\__, |_|  \\__,_|_| |_| |_|___/
-                 |___/                        
-`}
-            </pre>
+            <div className="flex items-center mb-2">
+              <User className="w-5 h-5 mr-2 text-green-500" />
+              <h2 className="text-lg font-semibold text-green-500">Profile</h2>
+            </div>
             <p className="text-green-300">
               Experienced Developer and Information Security Auditor with expertise in programming, cybersecurity, and compliance. Skilled in Node.js, Web3 technologies, blockchain, and various aspects of information security including penetration testing and source code review.
             </p>
@@ -52,16 +47,10 @@ const Index = () => {
 
         <Card className="mb-6 bg-gray-900 border-green-500">
           <CardContent className="p-4">
-            <pre className="text-green-500 mb-2">
-{`
- _____                      _                      
-| ____|_  ___ __   ___ _ __(_) ___ _ __   ___ ___  
-|  _| \\ \\/ / '_ \\ / _ \\ '__| |/ _ \\ '_ \\ / __/ _ \\ 
-| |___ >  <| |_) |  __/ |  | |  __/ | | | (_|  __/ 
-|_____/_/\\_\\ .__/ \\___|_|  |_|\\___|_| |_|\\___\\___| 
-           |_|                                     
-`}
-            </pre>
+            <div className="flex items-center mb-2">
+              <Briefcase className="w-5 h-5 mr-2 text-green-500" />
+              <h2 className="text-lg font-semibold text-green-500">Experience</h2>
+            </div>
             <div className="space-y-4 text-green-300">
               <div>
                 <h3 className="text-lg font-semibold">Information Security Audit and Compliance</h3>
@@ -84,25 +73,19 @@ const Index = () => {
 
         <Card className="bg-gray-900 border-green-500">
           <CardContent className="p-4">
-            <pre className="text-green-500 mb-2">
-{`
- ____  _    _ _ _     
-/ ___|| | _(_) | |___ 
-\\___ \\| |/ / | | / __|
- ___) |   <| | | \\__ \\
-|____/|_|\\_\\_|_|_|___/
-                      
-`}
-            </pre>
+            <div className="flex items-center mb-2">
+              <Code className="w-5 h-5 mr-2 text-green-500" />
+              <h2 className="text-lg font-semibold text-green-500">Skills</h2>
+            </div>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="outline" className="border-green-500 text-green-300">[Node.js]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Web3]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Blockchain]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Information Security]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Penetration Testing]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Source Code Review]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Cybersecurity]</Badge>
-              <Badge variant="outline" className="border-green-500 text-green-300">[Compliance]</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Node.js</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Web3</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Blockchain</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Information Security</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Penetration Testing</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Source Code Review</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Cybersecurity</Badge>
+              <Badge variant="outline" className="border-green-500 text-green-300">Compliance</Badge>
             </div>
           </CardContent>
         </Card>
