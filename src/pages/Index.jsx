@@ -23,7 +23,7 @@ const Index = () => {
             <div className="flex mt-2 space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span>+968 96672579</span>
+                <span>96672579</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
