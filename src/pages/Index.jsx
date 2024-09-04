@@ -4,74 +4,82 @@ import { Phone, Mail } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black text-green-400 py-12 px-4 sm:px-6 lg:px-8 font-mono">
       <div className="max-w-4xl mx-auto">
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Ahmed Aldhiyabi</h1>
-          <p className="text-xl text-gray-600">Developer & Information Security Auditor</p>
-          <p className="text-md text-gray-500">Muscat, Oman</p>
+          <pre className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+{`
+   _    _                    _    _    _ _     _           _     _ 
+  / \\  | |__  _ __ ___   ___| |  / \\  | | | __| |_  _   _(_) __| |
+ / _ \\ | '_ \\| '_ \` _ \\ / _ \\ | / _ \\ | | |/ _\` | || | | | |/ _\` |
+/ ___ \\| | | | | | | | |  __/ |/ ___ \\| | | (_| | || |_| | | (_| |
+/_/   \\_\\_| |_|_| |_| |_|\\___|_/_/   \\_\\_|_|\\__,_|\\__,_,_|_|\\__,_|
+`}
+          </pre>
+          <p className="text-xl mt-4">Developer & Information Security Auditor</p>
+          <p className="text-md">Muscat, Oman</p>
           <div className="flex justify-center mt-4 space-x-4">
-            <div className="flex items-center text-gray-600">
+            <div className="flex items-center">
               <Phone className="w-4 h-4 mr-2" />
               <span>+968 96672579</span>
             </div>
-            <div className="flex items-center text-gray-600">
+            <div className="flex items-center">
               <Mail className="w-4 h-4 mr-2" />
               <span>dhyabi@gmail.com</span>
             </div>
           </div>
         </header>
 
-        <Card className="mb-8">
+        <Card className="mb-8 bg-black border-green-400">
           <CardHeader>
-            <CardTitle>Professional Summary</CardTitle>
+            <CardTitle className="text-green-400">==== Professional Summary ====</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-700">
+            <p>
               Experienced Developer and Information Security Auditor with expertise in programming, cybersecurity, and compliance. Skilled in Node.js, Web3 technologies, blockchain, and various aspects of information security including penetration testing and source code review.
             </p>
           </CardContent>
         </Card>
 
-        <Card className="mb-8">
+        <Card className="mb-8 bg-black border-green-400">
           <CardHeader>
-            <CardTitle>Work Experience</CardTitle>
+            <CardTitle className="text-green-400">==== Work Experience ====</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-semibold">Information Security Audit and Compliance</h3>
-                <p className="text-gray-600">Financial Service Authority</p>
-                <p className="text-sm text-gray-500">Current Position</p>
+                <p>Financial Service Authority</p>
+                <p className="text-sm">Current Position</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Information Security Audit and Compliance</h3>
-                <p className="text-gray-600">Asyad Group</p>
-                <p className="text-sm text-gray-500">Previous Position</p>
+                <p>Asyad Group</p>
+                <p className="text-sm">Previous Position</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Programmer and Information Security Specialist</h3>
-                <p className="text-gray-600">Muscat Stock Exchange</p>
-                <p className="text-sm text-gray-500">8 Years</p>
+                <p>Muscat Stock Exchange</p>
+                <p className="text-sm">8 Years</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="bg-black border-green-400">
           <CardHeader>
-            <CardTitle>Skills</CardTitle>
+            <CardTitle className="text-green-400">==== Skills ====</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">Node.js</Badge>
-              <Badge variant="secondary">Web3</Badge>
-              <Badge variant="secondary">Blockchain</Badge>
-              <Badge variant="secondary">Information Security</Badge>
-              <Badge variant="secondary">Penetration Testing</Badge>
-              <Badge variant="secondary">Source Code Review</Badge>
-              <Badge variant="secondary">Cybersecurity</Badge>
-              <Badge variant="secondary">Compliance</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Node.js]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Web3]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Blockchain]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Information Security]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Penetration Testing]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Source Code Review]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Cybersecurity]</Badge>
+              <Badge variant="outline" className="border-green-400 text-green-400">[Compliance]</Badge>
             </div>
           </CardContent>
         </Card>
