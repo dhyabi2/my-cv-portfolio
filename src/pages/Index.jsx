@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Phone, Mail } from "lucide-react";
 
 const Index = () => {
   return (
@@ -9,6 +10,16 @@ const Index = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Ahmed Aldhiyabi</h1>
           <p className="text-xl text-gray-600">Developer & Information Security Auditor</p>
           <p className="text-md text-gray-500">Muscat, Oman</p>
+          <div className="flex justify-center mt-4 space-x-4">
+            <div className="flex items-center text-gray-600">
+              <Phone className="w-4 h-4 mr-2" />
+              <span>+968 96672579</span>
+            </div>
+            <div className="flex items-center text-gray-600">
+              <Mail className="w-4 h-4 mr-2" />
+              <span>dhyabi@gmail.com</span>
+            </div>
+          </div>
         </header>
 
         <Card className="mb-8">
@@ -17,7 +28,7 @@ const Index = () => {
           </CardHeader>
           <CardContent>
             <p className="text-gray-700">
-              Experienced Developer and Information Security Auditor with 12 years of expertise in programming, cybersecurity, and compliance. Skilled in Node.js, Web3 technologies, blockchain, and various aspects of information security including penetration testing and source code review.
+              Experienced Developer and Information Security Auditor with expertise in programming, cybersecurity, and compliance. Skilled in Node.js, Web3 technologies, blockchain, and various aspects of information security including penetration testing and source code review.
             </p>
           </CardContent>
         </Card>
